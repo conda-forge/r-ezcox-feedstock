@@ -1,4 +1,4 @@
-{% set version = '0.8.1' %}
+{% set version = "1.0.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,10 +11,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ezcox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ezcox/ezcox_{{ version }}.tar.gz
-  sha256: 84b45794f4697ebb3637bdf3f22373c5d4ce656fe97e5861984422cdfea20ed1
+  sha256: 925ea2b0f04f39c229acb69f0d1c2f8af4d84d5806e22b45c310165ef3b6f6e9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
 
@@ -56,12 +56,11 @@ about:
   home: https://github.com/ShixiangWang/ezcox
 
   license: GPL-2.0-or-later
-  summary: A tool to operate a batch of univariate or multivariate Cox models and return tidy
-    result.
+  summary: A tool to operate a batch of univariate or multivariate Cox models and return tidy result.
 
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
