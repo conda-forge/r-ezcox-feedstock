@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ezcox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ezcox/ezcox_{{ version }}.tar.gz
-  sha256: 0856bcf63f8e776b0906c8577f606d436c3a5e800b1ffc81537a1ccdb50d4ce9
+  sha256: 274e27e52b11ff6f1f037dfbf7b8533d79e1b9331306b89d60f8e0116bcb3356
 
 build:
   merge_build_host: true  # [win]
