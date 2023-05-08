@@ -1,11 +1,11 @@
-About r-ezcox
-=============
+About r-ezcox-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ezcox-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ShixiangWang/ezcox
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ezcox-feedstock/blob/main/LICENSE.txt)
 
 Summary: A tool to operate a batch of univariate or multivariate Cox models and return tidy result.
 
